@@ -1,0 +1,11 @@
+{
+    "git.ignoreLimitWarning": true,
+    "python.pythonPath": "/Users/minh/.local/share/virtualenvs/airbnb-Y-s5gvwk/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.linting.flake8Args": [
+        "--max--line--length=88"
+    ]
+}
