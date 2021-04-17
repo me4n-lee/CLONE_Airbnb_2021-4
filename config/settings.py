@@ -199,3 +199,4 @@ if not DEBUG:
     )
 
     sentry_sdk.integrations.logging.ignore_logger("django.security.DisallowedHost")
+    
