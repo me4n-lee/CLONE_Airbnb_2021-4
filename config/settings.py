@@ -182,7 +182,7 @@ if not DEBUG:
     STATICFILES_STORAGE = "config.custom_storages.StaticStorage"
     AWS_ACCESS_KEY_ID = os.environ.get("AWS_ACCESS_KEY_ID")
     AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
-    AWS_STORAGE_BUCKET_NAME = "airbnb-clone-nomadcoders"
+    AWS_STORAGE_BUCKET_NAME = "airbnb-clone-minbnb"
     AWS_AUTO_CREATE_BUCKET = True
     AWS_BUCKET_ACL = "public-read"
     AWS_S3_OBJECT_PARAMETERS = {"CacheControl": "max-age=86400"}
@@ -199,4 +199,3 @@ if not DEBUG:
     )
 
     sentry_sdk.integrations.logging.ignore_logger("django.security.DisallowedHost")
-    
