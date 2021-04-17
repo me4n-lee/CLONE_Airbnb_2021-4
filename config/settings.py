@@ -29,7 +29,8 @@ SECRET_KEY = "%rstbb6*sr2op#67*0vywwk0rxdlru#r15@#@&z%#!8^(69v11"
 
 DEBUG = bool(os.environ.get("DEBUG"))
 
-ALLOWED_HOSTS = []
+#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [".elasticbeanstalk.com", "localhost"]
 
 
 # Application definition
@@ -43,7 +44,8 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-THIRD_PARTY_APPS = ["django_countries", "django_seed"]
+#THIRD_PARTY_APPS = ["django_countries", "django_seed"]
+THIRD_PARTY_APPS = ["django_countries", "django_seed", "storages"]
 
 PROJECT_APPS = [
     "users.apps.UsersConfig",
