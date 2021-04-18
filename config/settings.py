@@ -23,11 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("DJANGO_SECRET")
-
+SECRET_KEY = os.environ.get("DJANGO_SECRET", "1j9T$D7IJBMBimM$JMZ2T^8QLEIc6B6")
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = os.environ.get("DEBUG")
+DEBUG = bool(os.environ.get("DEBUG"))
 
 #ALLOWED_HOSTS = []
 ALLOWED_HOSTS = [".elasticbeanstalk.com", "localhost"]
@@ -44,8 +43,8 @@ DJANGO_APPS = [
     "django.contrib.staticfiles",
 ]
 
-#THIRD_PARTY_APPS = ["django_countries", "django_seed"]
-THIRD_PARTY_APPS = ["django_countries", "django_seed", "storages"]
+THIRD_PARTY_APPS = ["django_countries", "django_seed"]
+#THIRD_PARTY_APPS = ["django_countries", "django_seed", "storages"]
 
 PROJECT_APPS = [
     "users.apps.UsersConfig",
