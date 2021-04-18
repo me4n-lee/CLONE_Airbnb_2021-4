@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get("DJANGO_SECRET")
 DEBUG = os.environ.get("DEBUG")
 
 #ALLOWED_HOSTS = []
-ALLOWED_HOSTS = [".elasticbeanstalk.com"]
+ALLOWED_HOSTS = [".elasticbeanstalk.com", "localhost"]
 
 
 # Application definition
