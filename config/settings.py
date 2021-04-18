@@ -102,6 +102,7 @@ if DEBUG is False:
             "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
         }
     }
+
 else:
 
     DATABASES = {
